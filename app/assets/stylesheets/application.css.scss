@@ -29,8 +29,25 @@ h1, h2, h3 {
 }
 
 .navbar {
-    
     border: none;
+}
+
+.navbar-default .navbar-brand {
+    color: #bdc3c7;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #FFF;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #FFF;
+    opacity: 0.75;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #FFF;
+    opacity: 0.75;
 }
 
 .home-callout{
