@@ -17,10 +17,12 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+// Typography Styles
 h1, h2, h3 {
     font-family: 'News Cycle', sans-serif;
 }
 
+// Backgroud Gradient
 .navbar, .home-callout {
     //Gradient provided by @_igosh at http://uigradients.com/#
     background: #bdc3c7; /* fallback for old browsers */
@@ -28,28 +30,21 @@ h1, h2, h3 {
     background: linear-gradient(to left, #bdc3c7 , #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+// Nav Styles
 .navbar {
     border: none;
 }
 
-.navbar-default .navbar-brand {
-    color: #bdc3c7;
-}
-
+.navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
     color: #FFF;
+    &:hover {
+        color: #FFF;
+        opacity: 0.75;
+    }
 }
 
-.navbar-default .navbar-brand:hover {
-    color: #FFF;
-    opacity: 0.75;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-    color: #FFF;
-    opacity: 0.75;
-}
-
+// Homepage Styles
 .home-callout{
     color: white;
     margin-top: -20px;
