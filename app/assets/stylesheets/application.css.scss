@@ -19,10 +19,9 @@
 
 h1, h2, h3 {
     font-family: 'News Cycle', sans-serif;
-    color: white;
 }
 
-body, .navbar {
+.navbar, .home-callout {
     //Gradient provided by @_igosh at http://uigradients.com/#
     background: #bdc3c7; /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #bdc3c7 , #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
@@ -32,4 +31,12 @@ body, .navbar {
 .navbar {
     
     border: none;
+}
+
+.home-callout{
+    color: white;
+    margin-top: -20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
 }
