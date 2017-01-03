@@ -6,7 +6,7 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     if @contact.save
-      flash[:warning] = "Message received"
+      flash[:warning] = "Message received, thanks!"
       redirect_to new_contact_path
     else
       flash[:danger] = @contact.errors.full_messages.join(", ")
