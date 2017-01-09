@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+  <div class="container-fluid text-center">
+    <h1>RyeMatch</h1>
+    <br>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <p>
+            RyeMatch is a fictional (yet functional) webapp designed to match the 
+            budding talent of Ryerson University's image arts students with
+            emerging models within Ryerson's community.
+        </p>
+        <p>
+            By utilizing ruby gems attributing to user enrolment and ecommerce,
+            I was able to develop a simple 'freemium' app to match users based on
+            their specific needs.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container home-signup-links">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="well">
+          <h2 class="enrol-title">Basic (FREE)</h2>
+          <h4>Sign up for free and get basic access to the community</h4>
+          <br />
+          <%= 
+            link_to "Sign up with Basic", 
+            new_user_registration_path(plan: @basic_plan.id),
+            class: 'btn btn-warning btn-block' 
+          %>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="well">
+          <h2 class="enrol-title">Pro ($10/month)</h2>
+          <h4>Sign up for Pro and get access to the community and contact information!</h4>
+          <%= 
+            link_to "Sign up with Pro", 
+            new_user_registration_path(plan: @pro_plan.id), 
+            class: 'btn btn-success btn-block' 
+          %>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
