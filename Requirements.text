@@ -5,6 +5,7 @@ Memberships
 * Pro plan link should point to a custom sign-up form
 
 Stripe Integration
+* Users should have a stripe customer token in the users table.
 * Javascript should prevent Pro form from submitting, when user fills it out,
 and should send card info to Stripe. Stripe will return with a card token.
 * Javascript should send user fields and card token to our rails app. Rails app
