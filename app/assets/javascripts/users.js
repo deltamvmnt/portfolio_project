@@ -1,6 +1,6 @@
 /* global $, Stripe */
 //Document ready function.
-$(document).on('turbolinks:load',function(){
+$(document).on('turbolinks:load', function(){
   var theForm = $('#pro_form');
   var signupBtn = $('#form-signup-btn');
   
@@ -9,8 +9,9 @@ $(document).on('turbolinks:load',function(){
   
   //When users clicks form submit button, prevent default submission behaviour.
   signupBtn.click(function(event){
+    //Prevent default submission behaviour.
     event.preventDefault();
-    signupBtn.val("Processing").prop('disabled',true)
+    signupBtn.val("Processing").prop('disabled',true);
     
       //Collect card fields.
     var ccNum = $('#card_number').val(),
@@ -24,23 +25,23 @@ $(document).on('turbolinks:load',function(){
       //Validate card number
       if (!Stripe.card.validateCardNumber(ccNum)) {
         error = true;
-        alert('The credit card number appears to be invalid')
+        alert('The credit card number appears to be invalid');
       }
       
       //Validate CVC
       if (!Stripe.card.validateCVC(cvcNum)) {
         error = true;
-        alert('The CVC number appears to be invalid')
+        alert('The CVC number appears to be invalid');
       }
       
       //Validate card expiration
       if (!Stripe.card.validateExpiry(expMonth,expYear)) {
         error = true;
-        alert('The expiration date appears to be invalid')
+        alert('The expiration date appears to be invalid');
       }
         if (error) {
           //If there are card errors, don't send to stripe
-          
+          signupBtn.prop('disabled', false).val("Sign Up");
         } 
         else {
           //Send card info to stripe.
