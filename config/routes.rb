@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   resources :contacts, only: :create
   get 'contact-me', to: 'contacts#new', as: 'new_contact'
   get 'ryematch', to: 'pages#ryematch'
+  resources :users do
+    resource :profile
+  end
 end
