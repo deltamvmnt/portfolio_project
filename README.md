@@ -1,3 +1,3 @@
 # README
 
-[Upskill](http://upskillcourses.com) Ruby on Rails Software-as-a-Service App 
+Using Rob Dey's [Upskill](http://upskillcourses.com) rails application tutorial
