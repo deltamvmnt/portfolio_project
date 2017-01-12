@@ -72,3 +72,6 @@ gem 'stripe_event', '1.5.0'
 
 # Use Figaro for ENV variables
 gem 'figaro', '1.1.1'
+
+# Use Paperclip for image upload
+gem 'paperclip', '4.3.6'
