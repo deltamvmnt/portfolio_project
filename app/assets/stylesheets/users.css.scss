@@ -3,6 +3,18 @@
   height: 240px;
 }
 
+.job-title-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #F8C278;
+  border-radius: 2px;
+  background-color: #F89406;
+  color: white;
+  text-align: center;
+  padding: -3px;
+}
+
 .well.profile-block {
   color: white;
   h5 {
@@ -23,3 +35,4 @@
 .fader {
   background-color:rgba(0, 0, 0, 0.5)
 }
+
