@@ -2,20 +2,23 @@
 <html>
   <head>
   </head>
-  <body>
+  <body class="contact-body">
     <div class="container">
       <div class="row">
-        <h2 class="text-center">Talk to Me</h2>
+        <h2 class="text-center contact-header">Talk To Me</h2>
         <br>
         <div class='col-md-6 col-md-offset-3'>
-          <p class="text-center">
-            If you want to get in touch to give feedback on my work, inquire 
-            about collaboration or ask how my arm is healing, this would be the best
-            way to drop me a line
-          </p>
+          <div class="well about-content-well">
+            <p class="text-center">
+              This is the best way to contact me. These messages are sent directly
+              to my personal email inbox and I'll respond to them as quickly as I
+              can. Drop me a line if you're interested in the website or if I overlooked
+              anything drastic. 
+            </p>
+          </div>
         </div>
         <div class='col-md-4 col-md-offset-4'>
-          <div class="well">
+          <div class="well about-content-well">
             <%= form_for @contact do |f| %>
               <div class="form-group">
                 <%= f.label :name %>
@@ -29,7 +32,7 @@
                 <%= f.label :comments %>
                 <%= f.text_area :comments, class: 'form-control' %>
               </div>
-                <%= f.submit 'Submit', class: 'btn btn-default' %>
+                <%= f.submit 'Submit', class: 'btn btn-warning' %>
             <% end %>
           </div>
         </div>

@@ -20,12 +20,12 @@
 @import 'font-awesome';
 
 // Typography Styles
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6, p {
   font-family: 'News Cycle', sans-serif;
 }
 
 // Backgroud Gradient
-.home-body, .navbar, .home-callout {
+.home-body, .navbar, .home-callout, .about-body, .contact-body{
   //Gradient provided by @_igosh at http://uigradients.com/#
   background: #bdc3c7; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #bdc3c7 , #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
@@ -64,8 +64,17 @@ h1, h2, h3 {
 
 
 // Homepage Styles
+.home-image {
+  width: 300px;
+}
 
-.home-callout{
+.home-image-border {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+}
+
+.home-callout {
   color: white;
   margin-top: -20px;
   padding-top: 20px;
@@ -104,3 +113,14 @@ h1, h2, h3 {
 .profile-picture {
   width: 250px;
 }
+
+// About Page Styles
+.about-header, .contact-header {
+  color:white;
+}
+
+.about-content-well {
+  background: rgba(197,242,255,0.3);
+  border: rgba(38,35,69,0.3);
+}
+

@@ -6,6 +6,9 @@ class PagesController < ApplicationController
   def about
   end
   
+  def whatsnext
+  end
+  
   def ryematch
     @basic_plan = Plan.find(1)
     @pro_plan = Plan.find(2)
