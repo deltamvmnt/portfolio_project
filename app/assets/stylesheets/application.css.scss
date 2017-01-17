@@ -20,12 +20,12 @@
 @import 'font-awesome';
 
 // Typography Styles
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, ul {
   font-family: 'News Cycle', sans-serif;
 }
 
 // Backgroud Gradient
-.home-body, .navbar, .home-callout, .about-body, .contact-body{
+.home-body, .navbar, .home-callout, .about-body, .contact-body, .next-body {
   //Gradient provided by @_igosh at http://uigradients.com/#
   background: #bdc3c7; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #bdc3c7 , #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
@@ -124,3 +124,6 @@ h1, h2, h3, h4, h5, h6, p {
   border: rgba(38,35,69,0.3);
 }
 
+.next-header {
+  color: white;
+}
