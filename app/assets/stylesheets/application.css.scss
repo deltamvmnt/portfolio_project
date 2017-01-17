@@ -22,6 +22,7 @@
 // Typography Styles
 h1, h2, h3, h4, h5, h6, p, ul {
   font-family: 'News Cycle', sans-serif;
+  &:p {font-size: 110%;}
 }
 
 // Backgroud Gradient
@@ -130,4 +131,14 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .linkedin-link {
   margin-top: 5px;
+}
+
+.coded-list {
+  padding-left: 40px;
+  padding-right: -20px;
+}
+
+.list-content-well {
+  background: rgba(197,242,255,0.7);
+  border: rgba(38,35,69,0.3);
 }
